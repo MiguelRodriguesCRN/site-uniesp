@@ -23,8 +23,8 @@ const Noticias = () => {
                         <Card className='h-100 shadow-sm'>
                             <Card.Img
                                 variant='top'
-                                src="https://images.unsplash.com/photo-1652974731232-efc86a9bd985"
-                                alt='Imagem da notícia'
+                                src={`/${noticia.imagem}`}  // imagens na pasta public
+                                alt={`Imagem da notícia: ${noticia.titulo}`}
                                 style={{ objectFit: 'cover', height: '140px' }}
                             />
                             <Card.Body>
