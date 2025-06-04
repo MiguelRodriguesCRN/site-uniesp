@@ -1,11 +1,13 @@
 import React from "react";
 import { Container, Card, Row, Col } from "react-bootstrap";
+import BannerAd from "../components/BannerAd";
 
 const Inicial = () => {
   return (
     <div>
       <Container className="py-4">
-        {/*  Aqui será o Carrosel do Banco  */}
+
+        <BannerAd></BannerAd>
 
         <Card className="mb-4 shadow-sm">
           <Card.Body>
@@ -35,7 +37,7 @@ const Inicial = () => {
                 <Card.Img 
                 variant="top"
                 src="https://images.unsplash.com/photo-1556761175-4b46a572b786"
-                alt=""
+                alt="Campus Life"
                 style={{height: '200px', objectFit: 'cover'}}
                 >
                 </Card.Img>
@@ -57,7 +59,7 @@ const Inicial = () => {
                 <Card.Img 
                 variant="top"
                 src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc"
-                alt=""
+                alt="Librery"
                 style={{height: '200px', objectFit: 'cover'}}
                 >
                 </Card.Img>
@@ -79,7 +81,7 @@ const Inicial = () => {
                 <Card.Img 
                 variant="top"
                 src="https://images.unsplash.com/photo-1652974731232-efc86a9bd985"
-                alt=""
+                alt="Main Bulding"
                 style={{height: '200px', objectFit: 'cover'}}
                 >
                 </Card.Img>
@@ -95,6 +97,33 @@ const Inicial = () => {
           </Col>
         </Row>
 
+        {/* Segunda Linha com duas colunas para os cards ficarem lado a lado*/}
+
+        <Row className="g-4 mt-4">
+          {/* CARD 01*/}
+          <Col md={6}>
+            <Card className="h-100 shadow-sm">
+              <Card.Body className="text-center">
+                <Card.Title>Parcerias com Empresas</Card.Title>
+                <Card.Text>
+                  A UNIESP mantém parcerias com diversas empresas, permitindo que nossos alunos tenham acesso a oportunidades de estágio e emprego logo após a graduação...
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+
+                    {/* CARD 02*/}
+          <Col md={6}>
+            <Card className="h-100 shadow-sm">
+              <Card.Body className="text-center">
+                <Card.Title>Compromisso com a Educação</Card.Title>
+                <Card.Text>
+                  A UNIESP se dedica a oferecer uma educação acessível e de qualidade, acreditando que o conhecimento transforma vidas...
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
 
       </Container>
     </div>
