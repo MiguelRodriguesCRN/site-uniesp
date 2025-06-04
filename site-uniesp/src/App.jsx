@@ -8,6 +8,7 @@ import DpoLgpd from './pages/DpoLgpd'
 import Noticias from './pages/Noticias'
 import VisualizaNoticia from './pages/VisualizaNoticia'
 import Admin from './pages/Admin'
+import Footer from './components/Footer'
 
 
 
@@ -25,6 +26,7 @@ const App = () => {
           <Route path='/admin_noticias' element={<Admin />} />
         </Routes>
       </Container>
+      <Footer />
     </BrowserRouter>
   )
 }

@@ -1,12 +1,83 @@
-# React + Vite
+# 🏫 Portal Acadêmico - Projeto React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um projeto fictício desenvolvido como parte de uma atividade para a faculdade. O portal simula um site institucional com informações sobre a instituição, notícias e uma área administrativa para gerenciamento de conteúdos.
 
-Currently, two official plugins are available:
+## 🔧 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** - Biblioteca JavaScript para construção de interfaces de usuário.
+- **React Router DOM** - Gerenciamento de rotas SPA.
+- **React Bootstrap** - Estilização com componentes prontos baseados no Bootstrap.
+- **Axios** - Requisições HTTP para consumo de API.
+- **JSON Server** - Mock de API REST para simular o backend.
 
-## Expanding the ESLint configuration
+## 📁 Estrutura de Diretórios
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── CustomNavbar.jsx
+│   │   └── Footer.jsx
+│   │   └── BannerAd.jsx   
+│   ├── pages/
+│   │   ├── Inicial.jsx
+│   │   ├── Faculdade.jsx
+│   │   ├── DpoLgpd.jsx
+│   │   ├── Noticias.jsx
+│   │   ├── VisualizaNoticia.jsx
+│   │   └── Admin.jsx
+│   ├── services/
+│   │   └── api.js
+│   ├── App.jsx
+│   └── index.js
+├── db.json
+└── README.md
+```
+
+## 📌 Funcionalidades
+
+- Página inicial com informações institucionais.
+- Página “A Faculdade” com dados sobre a instituição.
+- Página “DPO / LGPD” com informações sobre proteção de dados.
+- Listagem de notícias.
+- Visualização de notícia específica via rota dinâmica.
+- Tela administrativa com:
+  - Biografia do administrador.
+  - Painel de notificações.
+  - Métricas fictícias da faculdade.
+  - Barra lateral de navegação.
+  - Rodapé com informações de copyright.
+
+## 🚀 Como Executar o Projeto
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+   ```
+
+2. **Instale as dependências:**
+   ```bash
+   npm install
+   ```
+
+3. **Inicie o servidor JSON:**
+   ```bash
+   npx json-server --watch db.json --port 3000
+   ```
+
+4. **Rode a aplicação React:**
+   ```bash
+   npm start
+   ```
+
+5. **Acesse no navegador:**
+   ```
+   http://localhost:5173
+   ```
+
+## 👨‍💻 Autor
+
+**Miguel Rodrigues**  
+Desenvolvedor Front-end e Suporte Técnico na Vsoft  
+20 anos — apaixonado por dados, tecnologia e soluções inteligentes.
