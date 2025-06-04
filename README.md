@@ -79,5 +79,5 @@ Este é um projeto fictício desenvolvido como parte de uma atividade para a fac
 ## 👨‍💻 Autor
 
 **Miguel Rodrigues**  
-Desenvolvedor Front-end e Suporte Técnico na Vsoft  
+Desenvolvedor Back end e Suporte Técnico na Vsoft  
 20 anos — apaixonado por dados, tecnologia e soluções inteligentes.
